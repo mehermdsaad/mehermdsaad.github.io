@@ -82,10 +82,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 decrypted.content = bytesContent.toString(CryptoJS.enc.Utf8);
 
                 // Decrypt title
+                console.log("Attempting to decrypt title:", post.title); // ADDED DEBUG LOG
                 const bytesTitle = CryptoJS.AES.decrypt(post.title, password);
                 decrypted.title = bytesTitle.toString(CryptoJS.enc.Utf8);
                 if (bytesTitle.sigBytes === 0 || !decrypted.title) {
-                     console.warn(`Failed to decrypt title. Incorrect password or corrupted data.`);
+                     console.warn(`Failed to decrypt title. Incorrect password or corrupted data. Encrypted title: ${post.title}`); // MODIFIED DEBUG LOG
                      return { ...post, content: null };
                 }
 
