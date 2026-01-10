@@ -123,14 +123,14 @@ document.addEventListener('DOMContentLoaded', () => {
             const postHtml = `
                 <article class="post-entry">
                     <header class="entry-header">
-                        <h2>${post.title} <sup style="color: red;">[Private]</sup></h2>
+                        <h2>${post.title} <sup class="private-tag">[Private]</sup></h2>
                     </header>
                     <div class="entry-content">
                         <p>${truncatedContent}...</p>
                     </div>
                     <footer class="entry-footer">
                         <span>${new Date(post.date).toLocaleDateString()}</span>
-                        <button class="read-more-private" data-full-content="${encodeURIComponent(post.content)}" data-title="${encodeURIComponent(post.title)}" style="margin-left: 10px; padding: 5px 10px; background-color: #007bff; color: white; border: none; border-radius: 3px; cursor: pointer;">Read more...</button>
+                        <button class="read-more-private read-more-button" data-full-content="${encodeURIComponent(post.content)}" data-title="${encodeURIComponent(post.title)}">Read more...</button>
                     </footer>
                 </article>
             `;

@@ -10,7 +10,7 @@
 <meta name="description" content="Posts - Constellations">
 <meta name="author" content="">
 <link rel="canonical" href="https://mehermdsaad.github.io/posts/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.fab885e8986d8d12f10c659d982458b0ce16e706e45ad1e96c2fa4b9dc46ae5f.css" integrity="sha256-&#43;riF6JhtjRLxDGWdmCRYsM4W5wbkWtHpbC&#43;kudxGrl8=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.d2b32c79ff39cb536ff338b2174de9015f571f757cc9a17f9aca331a43e65f83.css" integrity="sha256-0rMsef85y1Nv8ziyF03pAV9XH3V8yaF/msozGkPmX4M=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://mehermdsaad.github.io/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://mehermdsaad.github.io/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://mehermdsaad.github.io/favicon-32x32.png">
@@ -112,11 +112,11 @@
   </h1>
 </header>
 
-<div id="private-content-section" style="margin-top: 2em; padding: 1em; border: 1px solid #ccc; border-radius: 5px;">
+<div id="private-content-section" class="private-section">
     <h3>Unlock Private Posts</h3>
-    <form id="password-form" style="display: flex; gap: 10px; margin-bottom: 1em;">
-        <input type="password" id="password-input" placeholder="Enter secret key" required style="flex-grow: 1; padding: 8px; border: 1px solid #ddd; border-radius: 3px;">
-        <button type="submit" style="padding: 8px 15px; background-color: #007bff; color: white; border: none; border-radius: 3px; cursor: pointer;">Unlock</button>
+    <form id="password-form" class="private-form">
+        <input type="password" id="password-input" placeholder="Enter secret key" required class="private-input">
+        <button type="submit" class="private-button">Unlock</button>
     </form>
     <div id="private-content-container" class="post-list">
         
@@ -137,11 +137,11 @@
 </article>
 
 
-<div id="postModal" style="display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.4);">
-  <div style="background-color: #fefefe; margin: 15% auto; padding: 20px; border: 1px solid #888; width: 80%; max-width: 800px; position: relative;">
-    <span id="closeModal" style="color: #aaa; float: right; font-size: 28px; font-weight: bold; cursor: pointer;">&times;</span>
-    <h2 id="modalTitle"></h2>
-    <div id="modalBody" style="margin-top: 20px; overflow-y: auto; max-height: 70vh;">
+<div id="postModal" class="modal">
+  <div class="modal-content">
+    <span id="closeModal" class="close-button">&times;</span>
+    <h2 id="modalTitle" class="modal-title"></h2>
+    <div id="modalBody" class="modal-body">
       
     </div>
   </div>
