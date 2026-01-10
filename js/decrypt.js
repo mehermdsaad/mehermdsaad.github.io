@@ -1,3 +1,5 @@
+console.log("Type of CryptoJS at decrypt.js start:", typeof CryptoJS);
+
 document.addEventListener('DOMContentLoaded', () => {
     const privateContentSection = document.getElementById('private-content-section'); // The entire section
     const passwordForm = document.getElementById('password-form');
