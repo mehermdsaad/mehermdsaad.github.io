@@ -67,7 +67,8 @@
         document.querySelector("html").dataset.theme = 'light';
     }
 
-</script><meta property="og:url" content="https://mehermdsaad.github.io/posts/">
+</script><script src="https://mehermdsaad.github.io/js/crypto-js.js"></script>
+<script src="https://mehermdsaad.github.io/js/decrypt.js"></script><meta property="og:url" content="https://mehermdsaad.github.io/posts/">
   <meta property="og:site_name" content="Constellations">
   <meta property="og:title" content="Posts">
   <meta property="og:locale" content="en-us">
@@ -111,6 +112,17 @@
   </h1>
 </header>
 
+<div id="private-content-section" style="margin-top: 2em; padding: 1em; border: 1px solid #ccc; border-radius: 5px;">
+    <h3>Unlock Private Posts</h3>
+    <form id="password-form" style="display: flex; gap: 10px; margin-bottom: 1em;">
+        <input type="password" id="password-input" placeholder="Enter secret key" required style="flex-grow: 1; padding: 8px; border: 1px solid #ddd; border-radius: 3px;">
+        <button type="submit" style="padding: 8px 15px; background-color: #007bff; color: white; border: none; border-radius: 3px; cursor: pointer;">Unlock</button>
+    </form>
+    <div id="private-content-container" class="post-list">
+        
+    </div>
+</div>
+
 <article class="post-entry"> 
   <header class="entry-header">
     <h2 class="entry-hint-parent">Am I Not The Main Character?
@@ -122,6 +134,19 @@
   </div>
   <footer class="entry-footer"><span title='2026-01-06 15:19:56 +0600 +06'>January 6, 2026</span></footer>
   <a class="entry-link" aria-label="post link to Am I Not The Main Character?" href="https://mehermdsaad.github.io/posts/aminotthemaincharacter/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">This is a secret
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>this is a private post
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-01-01 00:00:00 +0000 UTC'>January 1, 2023</span></footer>
+  <a class="entry-link" aria-label="post link to This is a secret" href="https://mehermdsaad.github.io/posts/priv/first-private-post/"></a>
 </article>
     </main>
     
